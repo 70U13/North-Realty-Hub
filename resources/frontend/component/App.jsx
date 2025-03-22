@@ -1,7 +1,8 @@
 
 import { Outlet, RouterProvider, createBrowserRouter } from "react-router-dom";
-import DasboardView from "../views/Dashboard/DashboardView";
 import Home from "./Home";
+import "../../layout/fonts.css";
+import "../../layout/app.css";
 
 const App = () => {
 
