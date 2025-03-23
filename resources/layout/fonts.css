@@ -122,6 +122,16 @@
     color: #CFD3D7;
 }
 
+/* Menu */
+
+.menu-p1{
+    font-family: 'Kameron', serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 15px;
+    color: #0C2C55;
+}
+
 /* Footer Button */
 
 .button {
