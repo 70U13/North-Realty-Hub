@@ -1,4 +1,4 @@
-import React from 'react'
+import { useState } from "react";
 import LandscapeLogo from '../../images/landscape-bg-blue-2.png';
 import Menu from '../../images/Nav Bar.svg';
 import HeadImg from '../../images/2.jpg';
@@ -20,8 +20,11 @@ import AccountOffer from '../../images/accounts_icon 1.svg';
 import VerifiedOffer from '../../images/ok_icon 1.svg';
 import DealsOffer from '../../images/deals_icon 1.svg';
 import Header2 from '../../images/header 2.svg';
+import HamburgerMenu from './Menu.jsx';
 
 const Home = () => {
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   return (
     <div className='flex flex-col w-full h-auto bg-[#0C2C55]'>
 
@@ -29,7 +32,14 @@ const Home = () => {
         <div className='mx-[10px] pt-[20px] pb-[10px]'>
             <div className="mx-[10px] flex justify-between items-center">
                 <img src={LandscapeLogo} width="150px" height="75px" />
-                <img src={Menu} width="34px" height="31px" />
+                <img onClick={() => setIsMenuOpen(true)} src={Menu} width="35px" height="31px" />
+
+                {/* Overlay Menu when isMenuOpen is true */}
+                {isMenuOpen && (
+                    <div className="fixed inset-0 bg-black bg-opacity-50 duration-300 flex justify-center items-center z-50">
+                        <HamburgerMenu closeMenu={() => setIsMenuOpen(false)} />
+                    </div>
+                )}
             </div>
             
             <div className='flex justify-center'>
@@ -63,14 +73,16 @@ const Home = () => {
             </div>
 
             {/* CONTENT - 2 - NEW PROPERTIES CAROUSEL */}
-            <div className='flex flex-col h-auto mt-[30px]'>
-                <div className='flex justify-between w-[500px] h-[25px] px-4'>
+            <div className='flex flex-col h-auto justify-center mt-[30px]'>
+                <div className='flex justify-between w-full h-[25px] px-4'>
                     <p className='h-content-new-property-p1 text-center'>New Listings</p>
-                    <p className='h-content-new-property-p2 text-center mr-[-250px]'>See All</p>
-                    <img src={RightArrow} alt='Bed Icon' width="13px" />
+                    <div className='flex justify-center gap-2'>
+                        <p className='h-content-new-property-p2 text-center'>See All</p>
+                        <img src={RightArrow} alt='Bed Icon' width="13px" />
+                    </div>
                 </div>
 
-                <div className="relative w-full h-auto mt-[15px] px-2">
+                <div className="flex justify-center items-center relative w-full h-auto mt-[15px] px-2">
                     {/* Scrollable Container */}
                     <div className="flex overflow-x-auto h-[273px] scrollbar-hide snap-x snap-mandatory space-x-4">
                         {/* Card Wrapper */}
