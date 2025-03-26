@@ -22,7 +22,7 @@ const Menu = ({ closeMenu }) => {
             <img src={WhiteLogo} width="250px" className="mt-[-20px]"/>
         </div>
 
-        <div className="flex flex-col ml-[30px] w-full h-auto gap-8">
+        <div className="flex flex-col ml-[20px] w-full h-auto gap-8">
             <div className="flex w-full mt-[30px]  items-center gap-6">
                 <img src={Properties} alt="Location Icon" width="25px" className="ml-[-5px]" />
                 <p className="menu-p1 mt-[5px]">Properties</p>
