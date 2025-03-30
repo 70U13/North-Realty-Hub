@@ -1,4 +1,8 @@
 import { useState } from "react";
+import { useNavigate } from 'react-router-dom';
+
+import Contact from './Contact';
+ 
 import LandscapeLogo from '../../images/landscape-bg-blue-2.png';
 import Menu from '../../images/Nav Bar.svg';
 import HeadImg from '../../images/2.jpg';
@@ -23,7 +27,12 @@ import Header2 from '../../images/header 2.svg';
 import HamburgerMenu from './Menu.jsx';
 
 const Home = () => {
+    const navigate = useNavigate();
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+    const navigateContact = () => {
+        navigate(<Contact />); // Change '/contact' to your desired route
+    };
 
   return (
     <div className='flex flex-col w-full h-auto bg-[#0C2C55]'>
@@ -46,7 +55,7 @@ const Home = () => {
                 <div className='grid grid-cols-2 justify-center items-center p-5'>
                     <div className='w-[180px] mx-auto'>
                         <p className='h-top-p'>Guiding <br/> Families Home, One Dream <br/> At A Time 🏡</p>
-                        <div className='mt-[10px] bg-[#FFDC7F] w-[73px] h-[23px] rounded-[5px] flex items-center justify-center'>
+                        <div onClick={navigateContact} className='mt-[10px] bg-[#FFDC7F] w-[73px] h-[23px] rounded-[5px] flex items-center justify-center'>
                             <p className='h-top-btn text-center'>Contact Us</p>
                         </div>
                     </div>
