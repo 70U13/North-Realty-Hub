@@ -1,7 +1,5 @@
 import { useState } from "react";
-import { useNavigate } from 'react-router-dom';
-
-import Contact from './Contact';
+import { Outlet, useNavigate } from 'react-router-dom';
  
 import LandscapeLogo from '../../images/landscape-bg-blue-2.png';
 import Menu from '../../images/Nav Bar.svg';
@@ -31,11 +29,12 @@ const Home = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     const navigateContact = () => {
-        navigate(<Contact />); // Change '/contact' to your desired route
+        navigate('/contact-us'); // Change '/contact' to your desired route
     };
 
   return (
     <div className='flex flex-col w-full h-auto bg-[#0C2C55]'>
+       
 
         {/* NAVBAR HEADER */}
         <div className='mx-[10px] pt-[20px] pb-[10px]'>
@@ -43,7 +42,6 @@ const Home = () => {
                 <img src={LandscapeLogo} width="150px" height="75px" />
                 <img onClick={() => setIsMenuOpen(true)} src={Menu} width="35px" height="31px" />
 
-                {/* Overlay Menu when isMenuOpen is true */}
                 {isMenuOpen && (
                     <div className="fixed inset-0 bg-black bg-opacity-50 duration-300 flex justify-center items-center z-50">
                         <HamburgerMenu closeMenu={() => setIsMenuOpen(false)} />
@@ -55,8 +53,9 @@ const Home = () => {
                 <div className='grid grid-cols-2 justify-center items-center p-5'>
                     <div className='w-[180px] mx-auto'>
                         <p className='h-top-p'>Guiding <br/> Families Home, One Dream <br/> At A Time 🏡</p>
-                        <div onClick={navigateContact} className='mt-[10px] bg-[#FFDC7F] w-[73px] h-[23px] rounded-[5px] flex items-center justify-center'>
+                        <div onClick={navigateContact} className='cursor-pointer mt-[10px] bg-[#FFDC7F] w-[73px] h-[23px] rounded-[5px] flex items-center justify-center'>
                             <p className='h-top-btn text-center'>Contact Us</p>
+                            
                         </div>
                     </div>
                     <img src={HeadImg} alt='Header Image' width="207px" />
@@ -255,8 +254,8 @@ const Home = () => {
         {/* FOOTER */}
         <div className='flex flex-col h-auto items-center mx-[10px] py-[20px] gap-4'>
 
-            <button class="fixed bottom-5 right-5 bg-white text-white p-3 rounded-full shadow-lg">
-                <svg class="w-4 h-4" viewBox="0 0 384 512">
+            <button className="fixed bottom-5 right-5 bg-white text-white p-3 rounded-full shadow-lg">
+                <svg className="w-4 h-4" viewBox="0 0 384 512">
                     <path
                         fill="#0C2C55"
                         d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"

@@ -132,6 +132,52 @@
     color: #0C2C55;
 }
 
+/* Contact */
+
+.c-top-p1{
+    font-family: 'Kameron', serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+.c-top-p2{
+    font-family: 'Kameron', serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 25px;
+    color: #FFFFFF;
+}
+.c-top-p3{
+    font-family: 'Kameron', serif;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 12px;
+    color: #FFFFFF;
+}
+.c-form-label{
+    font-family: 'Kameron', serif;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 12px;
+    color: #0C2C55;
+}
+.c-form-p1{
+    font-family: 'Kameron', serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 12px;
+    color: #0C2C55;
+}
+.c-form-btn{
+    font-family: 'Kameron', serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 12px;
+    letter-spacing: 5px;
+    color: #0C2C55;
+}
+
 /* Footer Button */
 
 .button {
