@@ -50,7 +50,7 @@ const Contact = () => {
             </div>
 
             {/* CONTENT */}
-            <div className='h-auto rounded-[30px] bg-[#EAEAEA] pt-10 pb-20'>
+            <div className='h-auto rounded-[30px] bg-[#EAEAEA] pt-10 pb-40'>
                 <form className="flex flex-col gap-3 p-4 w-[400px] mx-auto c-form-p1">
 
                     <div className="relative">

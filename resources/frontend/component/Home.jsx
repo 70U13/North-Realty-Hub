@@ -9,13 +9,13 @@ import ReviewImg from '../../images/1.jpg';
 import QStart from '../../images/quote-start.svg';
 import QEnd from '../../images/quote-end.svg';
 import PreviewText from '../../images/previewText.svg';
-import IconEmail from '../../images/icon-email.svg';
-import IconPhone from '../../images/icon-phone.svg';
+import IconEmail from '../../images/icons/23.png';
+import IconPhone from '../../images/icons/24.png';
 import RightArrow from '../../images/right_arrow_icon 1.svg';
-import LocatorIcon from '../../images/place_icon 1.svg';
-import BedIcon from '../../images/bed_icon 1.svg';
-import KitchenIcon from '../../images/kitchen_icon 1.svg';
-import BathroomIcon from '../../images/toilet_icon 1.svg';
+import LocatorIcon from '../../images/icons/11.png';
+import BedIcon from '../../images/icons/5.png';
+import KitchenIcon from '../../images/icons/7.png';
+import BathroomIcon from '../../images/icons/9.png';
 import Header1 from '../../images/header 1.svg';
 import HomeOffer from '../../images/home_icon 1.svg';
 import AccountOffer from '../../images/accounts_icon 1.svg';
@@ -92,28 +92,28 @@ const Home = () => {
 
                 <div className="flex justify-center items-center relative w-full h-auto mt-[15px] px-2">
                     {/* Scrollable Container */}
-                    <div className="flex overflow-x-auto h-[273px] scrollbar-hide snap-x snap-mandatory space-x-4">
+                    <div className="flex overflow-x-auto h-[280px] scrollbar-hide snap-x snap-mandatory space-x-4">
                         {/* Card Wrapper */}
                         <div className="flex flex-nowrap space-x-4">
                             {/* Card 1 */}
-                            <div className="w-[220px] h-[265px] flex flex-col items-center bg-white rounded-[20px] p-4 shadow-md snap-center">
+                            <div className="w-[220px] h-[275px] flex flex-col items-center bg-white rounded-[20px] p-4 shadow-md snap-center">
                                 <img src={ReviewImg} alt="Review Image" width="180px" className="rounded-[10px]" />
-                                <div className="flex flex-col w-[180px]">
+                                <div className="flex flex-col w-[180px] gap-1">
                                     <div className="flex justify-between mt-[5px] px-1">
                                         <p className="h-content-property-card-p1 text-left">Apartment</p>
                                         <p className="h-content-property-card-p2 text-right">Posted 4 days ago</p>
                                     </div>
                                     <div className="flex justify-between px-1">
-                                        <img src={LocatorIcon} alt="Location Icon" width="15px" className="ml-[-5px]" />
+                                        <img src={LocatorIcon} alt="Location Icon" width="25px" className="ml-[-8px]" />
                                         <p className="ml-[-30px] h-content-property-card-p3 text-left">Lahug, Cebu City</p>
                                         <p className="h-content-property-card-p2 text-right">(45 sqm.)</p>
                                     </div>
-                                    <div className="flex justify-between px-1">
-                                        <img src={BedIcon} alt="Bed Icon" width="13px" />
-                                        <p className="ml-[-20px] h-content-property-card-p2 text-left">2 beds</p>
-                                        <img src={KitchenIcon} alt="Kitchen Icon" width="13px" />
+                                    <div className="flex justify-between px-1 mt-2">
+                                        <img src={BedIcon} alt="Bed Icon" width="20px" className="ml-[-2px]"/>
+                                        <p className="ml-[-15px] h-content-property-card-p2 text-left">2 beds</p>
+                                        <img src={KitchenIcon} alt="Kitchen Icon" width="25px" />
                                         <p className="ml-[-20px] h-content-property-card-p2 text-left">1 kitchen</p>
-                                        <img src={BathroomIcon} alt="Bathroom Icon" width="13px" />
+                                        <img src={BathroomIcon} alt="Bathroom Icon" width="25px" />
                                         <p className="ml-[-20px] h-content-property-card-p2 text-right">Yes</p>
                                     </div>
                                     <div className="mt-[10px] bg-[#0C2C55] w-[73px] h-[23px] rounded-[5px] flex items-center justify-center self-center">
@@ -122,25 +122,25 @@ const Home = () => {
                                 </div>
                             </div>
 
-                            {/* Duplicate Card 2 */}
-                            <div className="w-[220px] h-[265px] flex flex-col items-center bg-white rounded-[20px] p-4 shadow-md snap-center">
+                            {/* Card 2 */}
+                            <div className="w-[220px] h-[275px] flex flex-col items-center bg-white rounded-[20px] p-4 shadow-md snap-center">
                                 <img src={ReviewImg} alt="Review Image" width="180px" className="rounded-[10px]" />
-                                <div className="flex flex-col w-[180px]">
+                                <div className="flex flex-col w-[180px] gap-1">
                                     <div className="flex justify-between mt-[5px] px-1">
                                         <p className="h-content-property-card-p1 text-left">Apartment</p>
                                         <p className="h-content-property-card-p2 text-right">Posted 4 days ago</p>
                                     </div>
                                     <div className="flex justify-between px-1">
-                                        <img src={LocatorIcon} alt="Location Icon" width="15px" className="ml-[-5px]" />
+                                        <img src={LocatorIcon} alt="Location Icon" width="25px" className="ml-[-8px]" />
                                         <p className="ml-[-30px] h-content-property-card-p3 text-left">Lahug, Cebu City</p>
                                         <p className="h-content-property-card-p2 text-right">(45 sqm.)</p>
                                     </div>
-                                    <div className="flex justify-between px-1">
-                                        <img src={BedIcon} alt="Bed Icon" width="13px" />
-                                        <p className="ml-[-20px] h-content-property-card-p2 text-left">2 beds</p>
-                                        <img src={KitchenIcon} alt="Kitchen Icon" width="13px" />
+                                    <div className="flex justify-between px-1 mt-2">
+                                        <img src={BedIcon} alt="Bed Icon" width="20px" className="ml-[-2px]"/>
+                                        <p className="ml-[-15px] h-content-property-card-p2 text-left">2 beds</p>
+                                        <img src={KitchenIcon} alt="Kitchen Icon" width="25px" />
                                         <p className="ml-[-20px] h-content-property-card-p2 text-left">1 kitchen</p>
-                                        <img src={BathroomIcon} alt="Bathroom Icon" width="13px" />
+                                        <img src={BathroomIcon} alt="Bathroom Icon" width="25px" />
                                         <p className="ml-[-20px] h-content-property-card-p2 text-right">Yes</p>
                                     </div>
                                     <div className="mt-[10px] bg-[#0C2C55] w-[73px] h-[23px] rounded-[5px] flex items-center justify-center self-center">
@@ -149,24 +149,25 @@ const Home = () => {
                                 </div>
                             </div>
 
-                            <div className="w-[220px] h-[265px] flex flex-col items-center bg-white rounded-[20px] p-4 shadow-md snap-center">
+                            {/* Card 3 */}
+                            <div className="w-[220px] h-[275px] flex flex-col items-center bg-white rounded-[20px] p-4 shadow-md snap-center">
                                 <img src={ReviewImg} alt="Review Image" width="180px" className="rounded-[10px]" />
-                                <div className="flex flex-col w-[180px]">
+                                <div className="flex flex-col w-[180px] gap-1">
                                     <div className="flex justify-between mt-[5px] px-1">
                                         <p className="h-content-property-card-p1 text-left">Apartment</p>
                                         <p className="h-content-property-card-p2 text-right">Posted 4 days ago</p>
                                     </div>
                                     <div className="flex justify-between px-1">
-                                        <img src={LocatorIcon} alt="Location Icon" width="15px" className="ml-[-5px]" />
+                                        <img src={LocatorIcon} alt="Location Icon" width="25px" className="ml-[-8px]" />
                                         <p className="ml-[-30px] h-content-property-card-p3 text-left">Lahug, Cebu City</p>
                                         <p className="h-content-property-card-p2 text-right">(45 sqm.)</p>
                                     </div>
-                                    <div className="flex justify-between px-1">
-                                        <img src={BedIcon} alt="Bed Icon" width="13px" />
-                                        <p className="ml-[-20px] h-content-property-card-p2 text-left">2 beds</p>
-                                        <img src={KitchenIcon} alt="Kitchen Icon" width="13px" />
+                                    <div className="flex justify-between px-1 mt-2">
+                                        <img src={BedIcon} alt="Bed Icon" width="20px" className="ml-[-2px]"/>
+                                        <p className="ml-[-15px] h-content-property-card-p2 text-left">2 beds</p>
+                                        <img src={KitchenIcon} alt="Kitchen Icon" width="25px" />
                                         <p className="ml-[-20px] h-content-property-card-p2 text-left">1 kitchen</p>
-                                        <img src={BathroomIcon} alt="Bathroom Icon" width="13px" />
+                                        <img src={BathroomIcon} alt="Bathroom Icon" width="25px" />
                                         <p className="ml-[-20px] h-content-property-card-p2 text-right">Yes</p>
                                     </div>
                                     <div className="mt-[10px] bg-[#0C2C55] w-[73px] h-[23px] rounded-[5px] flex items-center justify-center self-center">
@@ -181,12 +182,12 @@ const Home = () => {
             </div>
 
             {/* CONTENT - HEADER 1 */}
-            <div className='h-content-review flex justify-center w-[500px] px-4 mt-[40px] mx-auto'>
+            <div className='h-content-review flex justify-center w-full px-4 mt-[40px] mx-auto'>
                 <img src={Header1} alt='Header 1' width='450px'/>
             </div>
 
             {/* CONTENT - 3 - OFFERS */}
-            <div className='flex flex-col h-auto w-[500px] mt-[30px] mx-auto'>
+            <div className='flex flex-col h-auto w-full mt-[30px] mx-auto'>
                 <div className='flex grid-cols-2 h-auto w-[420px] mx-auto gap-6'>
                     <div className='flex flex-col w-auto h-[150px] flex flex-col bg-white rounded-[10px] p-6 gap-2'>
                         <img src={HomeOffer} alt='Home Icon' width="20px"/>
@@ -214,7 +215,7 @@ const Home = () => {
             </div>
 
             {/* CONTENT - HEADER 2 */}
-            <div className='h-content-review flex justify-center w-[500px] px-4 mt-[40px] mx-auto'>
+            <div className='h-content-review flex justify-center w-full px-4 mt-[40px] mx-auto'>
                 <img src={Header2} alt='Header 2' width='450px'/>
             </div>
 
@@ -266,8 +267,8 @@ const Home = () => {
 
             <img src={LandscapeLogo} width="150px" height="75px" />
             <p className='h-footer-p w-[275px]'>North Realty – A family-owned agency of brokers and agents, curating trusted property listings for every homebuyer. 🏡💙</p>
-            <div className='flex flex-col-2 items-center gap-2'>
-                <div className='flex h-footer-contact items-center gap-1'>
+            <div className='flex flex-col-2 items-center gap-3'>
+                <div className='flex h-footer-contact items-center gap-2'>
                     <img src={IconEmail} width="13px" height="75px" />
                     <p>juandelacruz@gmail.com</p>
                 </div>

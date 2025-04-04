@@ -2,13 +2,11 @@ import { useState } from "react";
 import { useNavigate } from 'react-router-dom';
 
 import WhiteLogo from '../../images/landscape-bg-white-1.png';
-import Properties from '../../images/properties.png';
-import Services from '../../images/accounts_icon 1.svg';
-import Review from '../../images/review.png';
-import Chat from '../../images/chat.png';
-import Support from '../../images/support.png';
-import FAQ from '../../images/help.png';
-import AboutUs from '../../images/group.png';
+import Home from '../../images/icons/16.png';
+import Properties from '../../images/icons/17.png';
+import Services from '../../images/icons/18.png';
+import Support from '../../images/icons/19.png';
+import AboutUs from '../../images/icons/20.png';
 import Exit from '../../images/Exit.svg';
 
 
@@ -27,35 +25,23 @@ const Menu = ({ closeMenu }) => {
 
         <div className="flex flex-col ml-[20px] w-full h-auto gap-8">
             <div onClick={() => navigate('/')} className="flex w-full mt-[30px]  items-center gap-6">
-                <img src={Properties} alt="Location Icon" width="25px" className="ml-[-5px]" />
+                <img src={Home} alt="Location Icon" width="55px" className="ml-[-5px]" />
                 <p className="menu-p1 mt-[5px]">Home</p>
             </div>
             <div className="flex w-full items-center gap-6">
-                <img src={Properties} alt="Location Icon" width="25px" className="ml-[-5px]" />
+                <img src={Properties} alt="Location Icon" width="55px" className="ml-[-5px]" />
                 <p className="menu-p1 mt-[5px]">Properties</p>
             </div>
-            <div className="flex w-full items-center gap-6">
-                <img src={Services} alt="Location Icon" width="25px" className="ml-[-5px]" />
+            <div onClick={() => navigate('/contact-us')} className="flex w-full items-center gap-6">
+                <img src={Services} alt="Location Icon" width="55px" className="ml-[-5px]" />
                 <p className="menu-p1 mt-[5px]">Services</p>
             </div>
             <div className="flex w-full items-center gap-6">
-                <img src={Review} alt="Location Icon" width="25px" className="ml-[-5px]" />
-                <p className="menu-p1 mt-[5px]">Reviews</p>
-            </div>
-            <div onClick={() => navigate('/contact-us')} className="flex w-full items-center gap-6">
-                <img src={Chat} alt="Location Icon" width="25px" className="ml-[-5px]" />
-                <p className="menu-p1 mt-[5px]">Contact Us</p>
-            </div>
-            <div className="flex w-full items-center gap-6">
-                <img src={Support} alt="Location Icon" width="25px" className="ml-[-5px]" />
+                <img src={Support} alt="Location Icon" width="55px" className="ml-[-5px]" />
                 <p className="menu-p1 mt-[5px]">Support</p>
             </div>
             <div className="flex w-full items-center gap-6">
-                <img src={FAQ} alt="Location Icon" width="25px" className="ml-[-5px]" />
-                <p className="menu-p1 mt-[5px]">FAQ</p>
-            </div>
-            <div className="flex w-full items-center gap-6">
-                <img src={AboutUs} alt="Location Icon" width="25px" className="ml-[-5px]" />
+                <img src={AboutUs} alt="Location Icon" width="55px" className="ml-[-5px]" />
                 <p className="menu-p1 mt-[5px]">About Us</p>
             </div>
         </div>
