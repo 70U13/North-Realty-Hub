@@ -1,12 +1,11 @@
 import { useState } from "react";
 import { useNavigate, useOutletContext } from "react-router-dom";
-
-import LandscapeLogo from '../../images/landscape-bg-blue-2.png';
-import Menu from '../../images/Nav Bar.svg';
+import LandscapeLogo from '../../images/logo/landscape-bg-white-2.png';
+import Menu from '../../images/hamburgermenu.svg';
 import HamburgerMenu from './Menu.jsx';
 import Profile from '../../images/user.png';
 import Email from '../../images/envelope.svg';
-import IconEmail from '../../images/icon-email.svg';
+import IconEmail from '../../images/icons/22.png';
 import IconPhone from '../../images/icon-phone.svg';
 
 const Contact = () => {
@@ -21,26 +20,21 @@ const Contact = () => {
     //const formData = context.formData;
 
     const [subject, setSubject] = useState('');
-  const [customSubject, setCustomSubject] = useState('');
+    const [customSubject, setCustomSubject] = useState('');
 
     return (
-        <div className='flex flex-col w-full h-auto bg-[#0C2C55]'>
+        <>
+        <div className='flex flex-col w-full h-auto bg-[#AFD9FF]'>
             
             {/* NAVBAR HEADER */}
-            <div className='mx-[10px] pt-[20px] pb-[10px]'>
-                <div className="mx-[10px] flex justify-between items-center">
+            <div className='relative mx-[10px] pt-[20px] pb-[10px]'>
+                <div className="mx-[20px] flex justify-between items-center">
                     <img src={LandscapeLogo} width="150px" height="75px" />
                     <img onClick={() => setIsMenuOpen(true)} src={Menu} width="35px" height="31px" />
 
-                    {/* Overlay Menu when isMenuOpen is true */}
-                    {isMenuOpen && (
-                        <div className="fixed inset-0 bg-black bg-opacity-50 duration-300 flex justify-center items-center z-50">
-                            <HamburgerMenu closeMenu={() => setIsMenuOpen(false)} />
-                        </div>
-                    )}
                 </div>
                 
-                <div className='flex flex-col justify-center my-10 mx-10 gap-4'>
+                <div className='flex flex-col justify-center my-10 mx-8 gap-4'>
                     <p className='c-top-p1'>Get in Touch with North Realty – Your Trusted Property Experts 🏡</p>
                     <p className='mt-3 c-top-p2'>Have questions or need assistance? </p>
                     <p className='c-top-p3'>Whether you're looking to buy, sell, or learn more about our services, we're here to help. 
@@ -50,7 +44,7 @@ const Contact = () => {
             </div>
 
             {/* CONTENT */}
-            <div className='h-auto rounded-[30px] bg-[#EAEAEA] pt-10 pb-40'>
+            <div className='h-auto rounded-[30px] bg-[#EFF8FF] pt-10 pb-40'>
                 <form className="flex flex-col gap-3 p-4 w-[400px] mx-auto c-form-p1">
 
                     <div className="relative">
@@ -117,14 +111,14 @@ const Contact = () => {
     
     
                 <img src={LandscapeLogo} width="150px" height="75px" />
-                <p className='h-footer-p w-[275px]'>North Realty – A family-owned agency of brokers and agents, curating trusted property listings for every homebuyer. 🏡💙</p>
+                <p className='h-footer-p1 w-[275px]'>North Realty – A family-owned agency of brokers and agents, curating trusted property listings for every homebuyer. 🏡💙</p>
                 <div className='flex flex-col-2 items-center gap-2'>
-                    <div className='flex h-footer-contact items-center gap-1'>
+                    <div className='flex h-footer-p2 items-center gap-1'>
                         <img src={IconEmail} width="13px" height="75px" />
                         <p>juandelacruz@gmail.com</p>
                     </div>
-                    <div className='flex h-footer-contact items-center gap-1'>
-                        <img src={IconPhone} width="13px" height="75px" />
+                    <div className='flex h-footer-p2 items-center gap-1'>
+                        <img src={IconEmail} width="13px" height="75px" />
                         <p>+63 912 345 6789</p>
                     </div>
                 </div>
@@ -132,6 +126,13 @@ const Contact = () => {
             </div>
 
         </div>
+        
+        {isMenuOpen && (
+            <div className="fixed inset-0 bg-black bg-opacity-50 duration-300 flex justify-center items-center z-10">
+                <HamburgerMenu closeMenu={() => setIsMenuOpen(false)} />
+            </div>
+        )}
+        </>
     )
 }
 

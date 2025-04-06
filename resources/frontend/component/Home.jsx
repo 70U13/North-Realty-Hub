@@ -1,15 +1,17 @@
 import { useState } from "react";
 import { Outlet, useNavigate } from 'react-router-dom';
  
-import LandscapeLogo from '../../images/landscape-bg-blue-2.png';
-import Menu from '../../images/Nav Bar.svg';
+import LSLogoWhite from '../../images/landscape-bg-blue-2.png';
+import LSLogoBlue from '../../images/logo/landscape-bg-white-2.png';
+import HomeBG from '../../images/bg/13.svg';
+import Menu from '../../images/hamburgermenu.svg';
 import HeadImg from '../../images/2.jpg';
 import PreviewImg from '../../images/3.jpg';
 import ReviewImg from '../../images/1.jpg';
 import QStart from '../../images/quote-start.svg';
 import QEnd from '../../images/quote-end.svg';
 import PreviewText from '../../images/previewText.svg';
-import IconEmail from '../../images/icons/23.png';
+import IconEmail from '../../images/icons/22.png';
 import IconPhone from '../../images/icons/24.png';
 import RightArrow from '../../images/right_arrow_icon 1.svg';
 import LocatorIcon from '../../images/icons/11.png';
@@ -33,39 +35,36 @@ const Home = () => {
     };
 
   return (
-    <div className='flex flex-col w-full h-auto bg-[#0C2C55]'>
-       
+    <>
+    
+    <div className='flex flex-col w-full bg-[#AFD9FF] h-auto'>
+
+        <div className="absolute inset-0 bg-no-repeat bg-right-top bg-contain opacity-90 z-1"
+            style={{ backgroundImage: `url(${HomeBG})`, backgroundSize: '600px ', opacity: '0.9' }}/>
 
         {/* NAVBAR HEADER */}
-        <div className='mx-[10px] pt-[20px] pb-[10px]'>
-            <div className="mx-[10px] flex justify-between items-center">
-                <img src={LandscapeLogo} width="150px" height="75px" />
-                <img onClick={() => setIsMenuOpen(true)} src={Menu} width="35px" height="31px" />
-
-                {isMenuOpen && (
-                    <div className="fixed inset-0 bg-black bg-opacity-50 duration-300 flex justify-center items-center z-50">
-                        <HamburgerMenu closeMenu={() => setIsMenuOpen(false)} />
-                    </div>
-                )}
-            </div>
+        <div className='relative z-2 mx-[10px] pt-[20px] pb-[10px]'>
             
-            <div className='flex justify-center'>
-                <div className='grid grid-cols-2 justify-center items-center p-5'>
-                    <div className='w-[180px] mx-auto'>
+            <div className="mx-[20px] flex justify-between items-center">
+                <img src={LSLogoBlue} width="150px" height="75px" />
+                <img onClick={() => setIsMenuOpen(true)} src={Menu} width="35px" height="31px" />
+            </div>
+                    
+            <div className='mx-[30px] flex justify-center'>
+                <div className='grid grid-cols-2 justify-center items-center pl-2 pt-2 pb-4'>
+                    <div className='w-auto'>
                         <p className='h-top-p'>Guiding <br/> Families Home, One Dream <br/> At A Time 🏡</p>
-                        <div onClick={navigateContact} className='cursor-pointer mt-[10px] bg-[#FFDC7F] w-[73px] h-[23px] rounded-[5px] flex items-center justify-center'>
+                        <div onClick={navigateContact} className='cursor-pointer mt-[15px] bg-[#FFFFFF] w-[78px] h-[27px] rounded-[5px] flex items-center justify-center'>
                             <p className='h-top-btn text-center'>Contact Us</p>
-                            
                         </div>
                     </div>
-                    <img src={HeadImg} alt='Header Image' width="207px" />
                 </div>
             </div>
             
         </div>
 
         {/* CONTENT */}
-        <div className='h-auto rounded-[30px] bg-[#EAEAEA] p-4 text-white'>
+        <div className='relative h-auto z-2 rounded-[30px] bg-[#EFF8FF] p-4 text-white'>
 
             {/* CONTENT  - 1 - ALL PROPERTIES */}
             <div className='flex justify-center bg-white rounded-[20px] shadow-[0px_4px_10px_0px_rgba(0,0,0,0.25)]'>
@@ -188,7 +187,7 @@ const Home = () => {
 
             {/* CONTENT - 3 - OFFERS */}
             <div className='flex flex-col h-auto w-full mt-[30px] mx-auto'>
-                <div className='flex grid-cols-2 h-auto w-[420px] mx-auto gap-6'>
+                <div className='flex grid-cols-2 h-auto w-full mx-auto gap-6'>
                     <div className='flex flex-col w-auto h-[150px] flex flex-col bg-white rounded-[10px] p-6 gap-2'>
                         <img src={HomeOffer} alt='Home Icon' width="20px"/>
                         <p className='h-offers-p1 text-left'>Home Tour</p>
@@ -200,7 +199,7 @@ const Home = () => {
                         <p className='h-offers-p2 text-left'>Personalized support from real estate experts to help you make the best decisions.</p>
                     </div>
                 </div>
-                <div className='flex grid-cols-2 h-auto w-[420px] mt-[20px] mx-auto gap-6'>
+                <div className='flex grid-cols-2 h-auto w-full mt-[20px] mx-auto gap-6'>
                     <div className='flex flex-col w-auto h-[150px] flex flex-col bg-white rounded-[10px] p-6 gap-2'>
                         <img src={VerifiedOffer} alt='Verified Icon' width="20px"/>
                         <p className='h-offers-p1 text-left'>Verified Documents</p>
@@ -220,8 +219,8 @@ const Home = () => {
             </div>
 
             {/* CONTENT - 4 - REVIEWS */}
-            <div className='bg-white w-auto h-auto flex flex-col items-center -m-4 mt-[120px] p-4'>
-                <div className=' w-[400px] flex flex-col items-center bg-white rounded-[20px] mt-[-50px] p-4 shadow-[0px_4px_10px_0px_rgba(0,0,0,0.15)]'>
+            <div className='bg-white w-auto h-auto flex flex-col items-center mt-[120px] p-4'>
+                <div className='w-full flex flex-col items-center bg-white rounded-[20px] mt-[-50px] p-4 shadow-[0px_4px_10px_0px_rgba(0,0,0,0.15)]'>
                     
                     <img src={ReviewImg} alt='Review Image' width="260px" className='shadow-[0px_2px_4px_0px_rgba(0,0,0,0.25)] rounded-[10px] mt-[-60px]' />
                     
@@ -253,7 +252,7 @@ const Home = () => {
         </div>
         
         {/* FOOTER */}
-        <div className='flex flex-col h-auto items-center mx-[10px] py-[20px] gap-4'>
+        <div className='flex flex-col h-auto items-center mx-[10px] py-[20px] gap-6'>
 
             <button className="fixed bottom-5 right-5 bg-white text-white p-3 rounded-full shadow-lg">
                 <svg className="w-4 h-4" viewBox="0 0 384 512">
@@ -264,23 +263,30 @@ const Home = () => {
                 </svg>
             </button>
 
-
-            <img src={LandscapeLogo} width="150px" height="75px" />
-            <p className='h-footer-p w-[275px]'>North Realty – A family-owned agency of brokers and agents, curating trusted property listings for every homebuyer. 🏡💙</p>
+            <img src={LSLogoBlue} width="150px" height="75px" />
+            <p className='h-footer-p1 w-[275px]'>North Realty – A family-owned agency of brokers and agents, curating trusted property listings for every homebuyer. 🏡💙</p>
             <div className='flex flex-col-2 items-center gap-3'>
-                <div className='flex h-footer-contact items-center gap-2'>
+                <div className='flex h-footer-p2 items-center gap-2'>
                     <img src={IconEmail} width="13px" height="75px" />
                     <p>juandelacruz@gmail.com</p>
                 </div>
-                <div className='flex h-footer-contact items-center gap-1'>
-                    <img src={IconPhone} width="13px" height="75px" />
+                <div className='flex h-footer-p2 items-center gap-1'>
+                    <img src={IconEmail} width="13px" height="75px" />
                     <p>+63 912 345 6789</p>
                 </div>
             </div>
             <p className='h-footer-copyright'>Copyright North Realty</p>
         </div>
-      
+    
     </div>
+    
+    {isMenuOpen && (
+        <div className="fixed z-3 inset-0 bg-black bg-opacity-50 duration-300 flex justify-center items-center">
+            <HamburgerMenu closeMenu={() => setIsMenuOpen(false)} />
+        </div>
+    )}
+    
+    </>
   )
 }
 
