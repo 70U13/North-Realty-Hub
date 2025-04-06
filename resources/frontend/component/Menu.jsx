@@ -32,7 +32,7 @@ const Menu = ({ closeMenu }) => {
                 <img src={Properties} alt="Location Icon" width="55px" className="ml-[-5px]" />
                 <p className="menu-p1 mt-[5px]">Properties</p>
             </div>
-            <div className="flex w-full items-center gap-6 opacity-50 cursor-not-allowed">
+            <div className="flex w-full items-center gap-6 opacity-50 cursor-pointer">
                 <img src={Services} alt="Location Icon" width="55px" className="ml-[-5px]" />
                 <p className="menu-p1 mt-[5px]">Services</p>
             </div>
