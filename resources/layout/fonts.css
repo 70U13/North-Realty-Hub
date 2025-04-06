@@ -8,15 +8,30 @@
     font-size: 22px;
     font-weight: 600;
     line-height: 25px;
-    color: #FFFFFF;
+    color: #0C2C55; /* Chnage the color if needed FFFFFF */
+    text-shadow: 3px 2px 3px rgba(0, 0, 0, 0.2);
 }
 .h-top-btn{
     font-family: 'Kameron', serif;
-    font-size: 10px;
+    font-size: 11px;
     font-weight: 600;
     color: #0C2C55;
 }
 
+.h-content-filter-p1{
+    font-family: 'Kameron', serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 25px;
+    color: #0C2C55;
+}
+.h-content-filter-p2{ /* small gray */
+    font-family: 'Kameron', serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 25px;
+    color: #A9A9A9;
+}
 .h-content-new-property-p1{
     font-family: 'Kameron', serif;
     font-size: 24px;
@@ -33,7 +48,7 @@
 }
 .h-content-property-card-p1{
     font-family: 'Kameron', serif;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 600;
     line-height: 25px;
     color: #0C2C55;
@@ -48,7 +63,7 @@
 .h-content-property-card-p3{ 
     font-family: 'Kameron', serif;
     font-size: 11px;
-    font-weight: 600;
+    font-weight: 400;
     line-height: 25px;
     color: #A9A9A9;
 }
@@ -102,24 +117,24 @@
     color: #FFFFFF;
 }
 
-.h-footer-p{
+.h-footer-p1{
     font-family: 'Kameron', serif;
     font-size: 10px;
     font-weight: 400;
     line-height: 15px;
-    color: #CFD3D7;
+    color: #0C2C55;
 }
-.h-footer-contact{
+.h-footer-p2{
     font-family: 'Kameron', serif;
-    font-size: 10px;
+    font-size: 8px;
     font-weight: 400;
-    color: #CFD3D7;
+    color: #0C2C55;
 }
 .h-footer-copyright{
     font-family: 'Kameron', serif;
     font-size: 8px;
     font-weight: 400;
-    color: #CFD3D7;
+    color: #0C2C55;
 }
 
 /* Menu */
@@ -136,24 +151,24 @@
 
 .c-top-p1{
     font-family: 'Kameron', serif;
-    font-size: 24px;
+    font-size: 23px;
     font-weight: 600;
     line-height: 20px;
-    color: #FFFFFF;
+    color: #0C2C55;
 }
 .c-top-p2{
     font-family: 'Kameron', serif;
     font-size: 12px;
     font-weight: 400;
     line-height: 25px;
-    color: #FFFFFF;
+    color: #0C2C55;
 }
 .c-top-p3{
     font-family: 'Kameron', serif;
     font-size: 10px;
     font-weight: 400;
     line-height: 12px;
-    color: #FFFFFF;
+    color: #0C2C55;
 }
 .c-form-label{
     font-family: 'Kameron', serif;

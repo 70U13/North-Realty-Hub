@@ -7,6 +7,7 @@ import "../../layout/app.css";
 import Layout from "./Layout";
 import Contact from "./Contact";
 import HomePage from "./Home";
+import Properties from "./Properties";
 //import ErrorPage from "./errorElement/ErrorPage";
 
 const router = createBrowserRouter([
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
             {
                 path: "/contact-us",
                 element: <Contact />,
+            },
+            {
+                path: "/properties",
+                element: <Properties />,
             },
         ],
     },
