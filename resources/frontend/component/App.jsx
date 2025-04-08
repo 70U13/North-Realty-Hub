@@ -8,6 +8,7 @@ import Layout from "./Layout";
 import Contact from "./Contact";
 import HomePage from "./Home";
 import Properties from "./Properties";
+import Services from "./Services";
 //import ErrorPage from "./errorElement/ErrorPage";
 
 const router = createBrowserRouter([
@@ -27,6 +28,10 @@ const router = createBrowserRouter([
             {
                 path: "/properties",
                 element: <Properties />,
+            },
+            {
+                path: "/services",
+                element: <Services />,
             },
         ],
     },

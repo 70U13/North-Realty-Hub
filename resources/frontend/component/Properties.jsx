@@ -182,7 +182,6 @@ const Properties = () => {
                     <img src={Header2} alt='Header 2' width='450px'/>
                 </div>
 
-
                 {/* CONTENT - 4 - REVIEWS */}
                 <div className='bg-white w-auto h-auto flex flex-col items-center mt-[120px] p-4'>
                     <div className='w-full flex flex-col items-center bg-white rounded-[20px] mt-[-50px] p-4 shadow-[0px_4px_10px_0px_rgba(0,0,0,0.15)]'>
