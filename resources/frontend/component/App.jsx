@@ -1,6 +1,5 @@
 
 import { Outlet, RouterProvider, createBrowserRouter } from "react-router-dom";
-import Home from "./Home";
 import "../../layout/fonts.css";
 import "../../layout/app.css";
 
@@ -9,6 +8,7 @@ import Contact from "./Contact";
 import HomePage from "./Home";
 import Properties from "./Properties";
 import Services from "./Services";
+import Admin from "./Admin";
 //import ErrorPage from "./errorElement/ErrorPage";
 
 const router = createBrowserRouter([
@@ -20,6 +20,10 @@ const router = createBrowserRouter([
             {
                 path: "/",
                 element: <HomePage />,
+            },
+            {
+                path: "/admin",
+                element: <Admin />,
             },
             {
                 path: "/contact-us",

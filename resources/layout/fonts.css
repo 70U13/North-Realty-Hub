@@ -3,21 +3,51 @@
 
 /**/
 
-.h-top-p{
+.h-top-p1{
     font-family: 'Kameron', serif;
-    font-size: 22px;
     font-weight: 600;
-    line-height: 25px;
     color: #0C2C55; /* Chnage the color if needed FFFFFF */
     text-shadow: 3px 2px 3px rgba(0, 0, 0, 0.2);
 }
+.h-top-p2{
+    font-family: 'Kameron', serif;
+    font-weight: 400;
+    color: #0C2C55; /* Chnage the color if needed FFFFFF */
+}
+.h-top-p3{
+    font-family: 'Kameron', serif;
+    font-weight: 600;
+    color: #0C2C55;
+}
 .h-top-btn{
     font-family: 'Kameron', serif;
-    font-size: 11px;
     font-weight: 600;
     color: #0C2C55;
 }
 
+.h-category-p1{
+    font-family: 'Kameron', serif;
+    font-weight: 600;
+    font-size: 24px;
+    color: #0C2C55; /* Chnage the color if needed FFFFFF */
+}
+.h-category-p2{
+    font-family: 'Kameron', serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #0C2C55; /* Chnage the color if needed FFFFFF */
+}
+.h-category-top-p2{
+    font-family: 'Kameron', serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: #0C2C55; /* Chnage the color if needed FFFFFF */
+}
+.h-category-op1{
+    font-family: 'Kameron', serif;
+    font-weight: 400;
+    color: #0C2C55; /* Chnage the color if needed FFFFFF */
+}
 .h-content-filter-p1{
     font-family: 'Kameron', serif;
     font-size: 16px;
@@ -34,14 +64,12 @@
 }
 .h-content-new-property-p1{
     font-family: 'Kameron', serif;
-    font-size: 24px;
     font-weight: 600;
     line-height: 25px;
     color: #0C2C55;
 }
 .h-content-new-property-p2{
     font-family: 'Kite One', serif;
-    font-size: 14px;
     font-weight: 400;
     line-height: 25px;
     color: #0C2C55;
@@ -135,6 +163,21 @@
     font-size: 8px;
     font-weight: 400;
     color: #0C2C55;
+}
+
+/* Header Desktop */
+
+.h-tabs-p1{
+    font-family: 'Kameron', serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #0C2C55;
+}
+.h-tabs-p2{
+    font-family: 'Kameron', serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #FFFFFF;
 }
 
 /* Menu */
