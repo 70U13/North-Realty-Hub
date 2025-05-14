@@ -1,18 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Kameron:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kite+One&display=swap');
-
-/**/
+/* Work Sans */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 .h-top-p1{
-    font-family: 'Kameron', serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 600;
     color: #0C2C55; /* Chnage the color if needed FFFFFF */
-    text-shadow: 3px 2px 3px rgba(0, 0, 0, 0.2);
 }
 .h-top-p2{
-    font-family: 'Kameron', serif;
-    font-weight: 400;
-    color: #0C2C55; /* Chnage the color if needed FFFFFF */
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 400; /* Chnage the color if needed FFFFFF */
 }
 .h-top-p3{
     font-family: 'Kameron', serif;
@@ -26,14 +28,13 @@
 }
 
 .h-category-p1{
-    font-family: 'Kameron', serif;
-    font-weight: 600;
-    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
     color: #0C2C55; /* Chnage the color if needed FFFFFF */
 }
 .h-category-p2{
-    font-family: 'Kameron', serif;
-    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
     font-size: 16px;
     color: #0C2C55; /* Chnage the color if needed FFFFFF */
 }
@@ -47,6 +48,12 @@
     font-family: 'Kameron', serif;
     font-weight: 400;
     color: #0C2C55; /* Chnage the color if needed FFFFFF */
+}
+.h-category-btn{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    line-height: 16px;
+    color: #ffffff; /* Chnage the color if needed FFFFFF */
 }
 .h-content-filter-p1{
     font-family: 'Kameron', serif;
@@ -63,43 +70,50 @@
     color: #A9A9A9;
 }
 .h-content-new-property-p1{
-    font-family: 'Kameron', serif;
-    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
     line-height: 25px;
-    color: #0C2C55;
+    color: #A9A9A9;
 }
 .h-content-new-property-p2{
-    font-family: 'Kite One', serif;
-    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
     line-height: 25px;
     color: #0C2C55;
 }
 .h-content-property-card-p1{
-    font-family: 'Kameron', serif;
-    font-size: 16px;
-    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 500;       
     line-height: 25px;
     color: #0C2C55;
 }
 .h-content-property-card-p2{ /* small gray */
-    font-family: 'Kameron', serif;
-    font-size: 8.5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
     font-weight: 400;
     line-height: 25px;
-    color: #A9A9A9;
+    color: #0C2C55;
 }
 .h-content-property-card-p3{ 
-    font-family: 'Kameron', serif;
-    font-size: 11px;
-    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
     line-height: 25px;
-    color: #A9A9A9;
+    color: #0C2C55;
 }
 .h-new-property-btn{
     font-family: 'Kameron', serif;
     font-size: 10px;
     font-weight: 600;
     color: #ffffff;
+}
+
+.h-headers-p1{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    line-height: 40px;
+    color: #0C2C55; /* Chnage the color if needed FFFFFF */
 }
 
 .h-offers-p1{
