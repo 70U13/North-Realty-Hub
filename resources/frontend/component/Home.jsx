@@ -1,6 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 import { Outlet, useNavigate, Link } from 'react-router-dom'
 import apiService from '../component/servicesApi/apiService.js'; 
+import axios from 'axios';
 import LSLogoWhite from '../../images/landscape-bg-blue-2.png';
 import LSLogoBlue from '../../images/logo/updated-landscape-logo (1).png';
 import HomeBG from '../../images/bg/13.svg';
@@ -86,22 +87,6 @@ const Home = () => {
         });
     }
     };
-
-    const [faqs, setFaqs] = useState([]);
-
-  useEffect(() => {
-    const loadFaqs = async () => {
-      try {
-        const response = await apiService.get('/api/faqs'); // Explicit full API path
-        console.log(response.data); // See what's actually coming back
-        setFaqs(response.data);
-      } catch (error) {
-        console.error('Failed to load FAQs:', error);
-      }
-    };
-
-    loadFaqs();
-  }, []);
 
   return (
     <>
@@ -523,15 +508,16 @@ const Home = () => {
                 <div className="w-full justify-center items-center flex flex-col mb-8 px-8 gap-2 lg:gap-2 xl:gap-4">
                     <p className='text-[20px] lg:text-[28px] xl:text-[22px] tracking-[1px] text-[#A9A9A9]/70 h-faq-p1'>COMMON QUESTIONS</p>
                 </div>
-                {faqs.map((faq, index) => (
-        <div key={index} className="flex flex-col pt-3 px-8 rounded-[10px] hover:bg-[#AFD9FF]/30 cursor-pointer transition-all duration-200 ease-in">
-          <div className="w-full justify-between items-center flex py-8 gap-2">
-            <p className="text-[16px] md:text-[20px] lg:text-[24px] xl:text-[32px] h-faq-p2">{faq.question}</p>
-            <Icon path={mdiArrowDownDropCircle} size={1.8} color="#0C2C55"/>
-          </div>
-          <div className="bg-[#0C2C55] border"></div>
-        </div>
-      ))}
+                <div
+                className="flex flex-col pt-3 px-8 rounded-[10px] hover:bg-[#AFD9FF]/30 cursor-pointer transition-all duration-200 ease-in"
+                >
+                <div className="w-full justify-between items-center flex py-8 gap-2">
+                    <p className="text-[16px] md:text-[20px] lg:text-[24px] xl:text-[32px] h-faq-p2">Lorem Ipsum?
+                    </p>
+                    <Icon path={mdiArrowDownDropCircle} size={1.8} color="#0C2C55" />
+                </div>
+                <div className="bg-[#0C2C55] border"></div>
+                </div>
             </div>
 
             {/* CONTENT - 5 - WORK WITH US */}
