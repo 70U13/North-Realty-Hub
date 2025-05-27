@@ -407,7 +407,7 @@ const Home = () => {
 
             {/* CONTENT - HEADER 1 */}
             <div className='w-full max-w-[500px] sm:max-w-[600px] md:max-w-[700px] lg:max-w-[1000px] xl:max-w-[1260px]
-             mt-[150px] mx-auto flex flex-col px-4 gap-4 h-content-review px-8'>
+             mt-[150px] mx-auto flex flex-col px-4 gap-4 h-content-review px-4'>
                 <p className="text-[24px] md:text-[20px] lg:text-[24px] xl:text-[38px]
                 leading-[35px] md:leading-[30px] xl:leading-[45px]
                 h-headers-p1 text-left">Finding your next home is easy with fully furnished options, trusted listings, and friendly, stress-free support.</p>
@@ -522,9 +522,9 @@ const Home = () => {
 
             {/* CONTENT - 5 - WORK WITH US */}
             <div className='w-full max-w-[350px] sm:max-w-[600px] md:max-w-[700px] lg:max-w-[1000px] xl:max-w-[1260px]
-             h-auto mt-[150px] mb-[100px] mx-auto flex flex-col md:flex-col justify-center items-center'>
+             h-auto mt-[150px] mb-[100px] mx-auto px-4 flex flex-col md:flex-col justify-center items-center'>
                 <div className='flex mb-[50px] text-center md:text-left justify-between items-center w-full h-auto'>
-                    <div className="w-full flex flex-col px-8 md:p-0 gap-2 lg:gap-2 xl:gap-4">
+                    <div className="w-full flex flex-col md:p-0 gap-2 lg:gap-2 xl:gap-4">
                         <p className='text-[28px] lg:text-[28px] xl:text-[36px] text-[#A9A9A9]/70 h-content-new-property-p1'>Work With Us</p>
                         <p className='text-[20px] lg:text-[26px] xl:text-[32px] h-content-new-property-p2'>Rent out your apartment hassle-free</p>
                     </div>
@@ -563,20 +563,14 @@ const Home = () => {
                 <img src={LSLogoBlue} className="mb-[20px] w-[200px] lg:w-[200px] block lg:hidden" />
                 <p className='h-footer-p1 w-full text-center md:text-left
                 text-[16px] sm:text-[18px] lg:text-[22px] xl:text-[30px] leading-[18px] lg:leading-[26px] xl:leading-[40px]'>North Realty – A family-owned agency of brokers and agents, curating trusted property listings for every homebuyer.</p>
-                <div className="w-full flex flex-row justify-end lg:justify-between mt-[50px] lg:mt-[80px]">
-                    <img src={LSLogoBlue} className="w-[150px] lg:w-[200px] hidden lg:block" />
+                <div className="w-full flex flex-row justify-end         mt-[50px] lg:mt-[80px]">
                     <div className='flex flex-col-2 items-end gap-8 text-[14px] sm:text-[16px] lg:text-[20px] text-[#0C2C55]/90'>
                         <p className="flex h-footer-p2 cursor-pointer">About Us</p>
                         <p className="h-footer-p2 cursor-pointer">Terms and Conditions</p>
                         <p className="h-footer-p2 cursor-pointer">For Landlords</p>
                     </div>
                 </div>
-                <div className="w-full flex flex-row justify-between mt-[10px] lg:mt-[20px] px-4">
-                    <div className='flex flex-col-2 items-center gap-8 text-[#0C2C55]/90'>
-                        <img src={Socials1} className="w-[25px] cursor-pointer" />
-                        <img src={Socials2} className="w-[25px] cursor-pointer" />
-                        <img src={Socials3} className="w-[25px] cursor-pointer" />
-                    </div>
+                <div className="w-full flex flex-row justify-end mt-[10px] lg:mt-[20px]">
                     <div className='flex flex-col-2 items-center gap-2 text-[12px] sm:text-[14px] md:text-[16px] lg:text-[16px] text-[#0C2C55]/90'>
                         <img src={Copyright} className="w-[15px]" />
                         <p className="h-footer-p3">Copyright North Realty</p>
